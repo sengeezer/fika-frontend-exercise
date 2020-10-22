@@ -1,5 +1,13 @@
 # FikaSearch
 
+## Task list
+
+  1. load / cache genres
+  2. load movies
+  3. enhance payload with genres
+  4. render once ready (spinner)
+  5. Flex w/ equal h & v spread layout
+
 ## Running the app
 
 ### Development
