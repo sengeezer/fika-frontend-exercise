@@ -22,7 +22,6 @@ const getMovies = async () => {
       const {results} = response.data;
 
       data = results;
-      // data = JSON.stringify(results);
     })
     .catch((error) => {
       data = new Error(error);
@@ -38,7 +37,6 @@ const getGenres = async () => {
     .then((response) => {
       const {genres} = response.data;
 
-      // data = JSON.stringify(genres);
       data = genres;
     })
     .catch((error) => {

@@ -32,6 +32,7 @@ const ListView = () => {
     <ListItem
       title={item.title}
       overview={item.overview}
+      poster={item.poster_path}
     />
   );
 
