@@ -13,7 +13,7 @@
 ### Development
 
 * **Setup:** Before running the app for the first time, run `npm install` from this directory.
-* While in development, simply use `npm start` from this directory to run the app.
+* While in development, simply use `npm start` from this directory to run the development server.
 
 ### Run instructions for iOS
 
