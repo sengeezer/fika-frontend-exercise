@@ -5,13 +5,13 @@
   1. Load / cache genres
   2. ~~Load movies~~
   3. Enhance movies payload with genre names
-  4. Render once ready (show spinner while loading)
+  4. ~~Render once ready (show spinner while loading)~~
   5. Refine list layout to use flexbox with equal height and width type spread layout
 
 ## Next steps ##
 
-* Determine why ListView component is not working as expected
-  * Use state / hooks for data fetching
+* ~~Determine why ListView component is not working as expected~~
+  * ~~Use state / hooks for data fetching~~
 * Complete task list
 * Verify functionality on physical device(s)
 

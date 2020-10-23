@@ -14,26 +14,38 @@ const movieList = {
   headers: {},
 };
 
-const getMovies = () => {
-  axios(movieList)
+const getMovies = async () => {
+  let data;
+
+  await axios(movieList)
     .then((response) => {
       const {results} = response.data;
 
-      return JSON.stringify(results);
+      data = results;
+      // data = JSON.stringify(results);
     })
     .catch((error) => {
-      return new Error(error);
+      data = new Error(error);
     });
+
+  return data;
 };
 
-const getGenres = () => {
-  axios(genreList)
-    .then(function (response) {
-      return JSON.stringify(response.data);
+const getGenres = async () => {
+  let data;
+
+  await axios(genreList)
+    .then((response) => {
+      const {genres} = response.data;
+
+      // data = JSON.stringify(genres);
+      data = genres;
     })
-    .catch(function (error) {
-      return new Error(error);
+    .catch((error) => {
+      data = new Error(error);
     });
+
+  return data;
 };
 
 export {getMovies, getGenres};

@@ -1,36 +1,28 @@
 import React from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-} from 'react-native';
+import {StyleSheet, View, Text} from 'react-native';
 
-const ListItem = ({title}) => {
+const ListItem = ({title, overview}) => {
   return (
-    <>
-      <View style={styles.item}>
-        <Text style={styles.title}>{title}</Text>
-      </View>
-    </>
+    <View style={styles.item}>
+      <Text style={styles.title}>{title}</Text>
+      <Text>{overview}</Text>
+    </View>
   );
 };
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    marginTop: StatusBar.currentHeight || 0,
-  },
   item: {
-    backgroundColor: '#f9c2ff',
+    // flex: 1,
+    backgroundColor: '#f4f4f4',
     padding: 20,
     marginVertical: 8,
     marginHorizontal: 16,
+    borderRadius: 4,
   },
   title: {
-    fontSize: 32,
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: '#333333',
   },
 });
 
