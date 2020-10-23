@@ -2,11 +2,17 @@
 
 ## Task list
 
-  1. load / cache genres
-  2. load movies
-  3. enhance payload with genres
-  4. render once ready (spinner)
-  5. Flex w/ equal h & v spread layout
+  1. Load / cache genres
+  2. ~~Load movies~~
+  3. Enhance movies payload with genre names
+  4. Render once ready (show spinner while loading)
+  5. Refine list layout to use flexbox with equal height and width type spread layout
+
+## Next steps ##
+
+* Determine why ListView component is not working as expected
+* Complete task list
+* Verify functionality on physical device(s)
 
 ## Running the app
 
