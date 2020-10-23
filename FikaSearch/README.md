@@ -11,6 +11,7 @@
 ## Next steps ##
 
 * Determine why ListView component is not working as expected
+  * Use state / hooks for data fetching
 * Complete task list
 * Verify functionality on physical device(s)
 
