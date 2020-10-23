@@ -14,7 +14,7 @@ import {
   StatusBar,
 } from 'react-native';
 
-import {Header, Colors} from 'react-native/Libraries/NewAppScreen';
+import {Colors} from 'react-native/Libraries/NewAppScreen';
 import ListView from './components/ListView';
 
 const App: () => React$Node = () => {
@@ -22,21 +22,12 @@ const App: () => React$Node = () => {
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
-        <ScrollView
-          contentInsetAdjustmentBehavior="automatic"
-          style={styles.scrollView}>
-          <Header />
-
-          <View style={styles.body}>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Movies</Text>
-              <Text style={styles.sectionDescription}>
-                Read the docs to discover what to do next:
-              </Text>
-              <ListView />
-            </View>
+        <View style={styles.body}>
+          <View style={styles.sectionContainer}>
+            <Text style={styles.sectionTitle}>Movies</Text>
+            <ListView />
           </View>
-        </ScrollView>
+        </View>
       </SafeAreaView>
     </>
   );

@@ -14,18 +14,26 @@ const movieList = {
   headers: {},
 };
 
-axios(movieList)
-  .then(function (response) {
-    console.log(JSON.stringify(response.data));
-  })
-  .catch(function (error) {
-    console.log(error);
-  });
+const getMovies = () => {
+  axios(movieList)
+    .then((response) => {
+      const {results} = response.data;
 
-axios(genreList)
-  .then(function (response) {
-    console.log(JSON.stringify(response.data));
-  })
-  .catch(function (error) {
-    console.log(error);
-  });
+      return JSON.stringify(results);
+    })
+    .catch((error) => {
+      return new Error(error);
+    });
+};
+
+const getGenres = () => {
+  axios(genreList)
+    .then(function (response) {
+      return JSON.stringify(response.data);
+    })
+    .catch(function (error) {
+      return new Error(error);
+    });
+};
+
+export {getMovies, getGenres};
