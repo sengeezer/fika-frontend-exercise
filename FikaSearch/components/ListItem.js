@@ -22,13 +22,19 @@ const ListItem = ({title, overview, poster, resolveGenreNames, genreIds}) => {
         resizeMode="contain"
       />
 
-      <Text>Genre(s): {genreNames.split(',').join(', ')}</Text>
-      <Text>{overview}</Text>
+      <Text style={styles.container}>
+        <Text style={styles.subTitle}>Genre(s): </Text>
+        {genreNames.split(',').join(', ')}
+      </Text>
+      <Text styles={styles.container}>{overview}</Text>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
+  container: {
+    marginVertical: 10,
+  },
   item: {
     backgroundColor: '#f4f4f4',
     padding: 20,
@@ -40,6 +46,10 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: 'bold',
     color: '#333333',
+    marginVertical: 10,
+  },
+  subTitle: {
+    fontWeight: 'bold',
   },
   image: {
     width: '100%',
