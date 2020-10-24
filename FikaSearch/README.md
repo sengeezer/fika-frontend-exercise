@@ -17,7 +17,7 @@
 
 * `npx react-native run-ios`
 * - or -
-* Open `fikaSsearchAlpha/ios/fikaSsearchAlpha.xcworkspace` in Xcode or run `xed -b ios`
+* Open `FikaSearch/ios/FikaSearch.xcworkspace` in Xcode or run `xed -b ios`
 * Hit the Run button
 
 ### Run instructions for Android
