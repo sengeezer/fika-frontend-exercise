@@ -3,6 +3,7 @@
 ## Next steps ##
 
 * Enrich content with more data from the API
+* Enhance layout with options for tablets
 * Verify functionality on physical device(s)
 * Write unit and end to end tests
 
