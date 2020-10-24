@@ -1,8 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {
-  SafeAreaView,
   StyleSheet,
-  ScrollView,
   View,
   StatusBar,
   ActivityIndicator,
@@ -15,7 +13,23 @@ import {getMovies, getGenres} from '../api/fetchData';
 const ListView = () => {
   const [isLoading, setLoading] = useState(true);
   const [genres, setGenres] = useState([]);
+
   const [movies, setMovies] = useState([]);
+
+  const getGenreNames = async (genreIds) => {
+    let resolvedGenreNames = [];
+
+    await genreIds.forEach((genreId) => {
+      genres.forEach((genre) => {
+        if (genre.id === genreId) {
+          resolvedGenreNames.push(genre.name);
+          return;
+        }
+      });
+    });
+
+    return resolvedGenreNames;
+  };
 
   useEffect(() => {
     (async () => {
@@ -32,6 +46,8 @@ const ListView = () => {
     <ListItem
       title={item.title}
       overview={item.overview}
+      genreIds={item.genre_ids}
+      resolveGenreNames={getGenreNames}
       poster={item.poster_path}
     />
   );
