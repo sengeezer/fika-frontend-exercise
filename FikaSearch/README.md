@@ -2,9 +2,9 @@
 
 ## Task list
 
-  1. Load / cache genres
+  1. ~~Load / cache genres~~
   2. ~~Load movies~~
-  3. Enhance movies payload with genre names
+  3. ~~Enhance movies payload with genre names~~
   4. ~~Render once ready (show spinner while loading)~~
   5. Refine list layout to use flexbox with equal height and width type spread layout
 
