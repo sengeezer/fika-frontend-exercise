@@ -1,19 +1,10 @@
 # FikaSearch
 
-## Task list
-
-  1. ~~Load / cache genres~~
-  2. ~~Load movies~~
-  3. ~~Enhance movies payload with genre names~~
-  4. ~~Render once ready (show spinner while loading)~~
-  5. Refine list layout to use flexbox with equal height and width type spread layout
-
 ## Next steps ##
 
-* ~~Determine why ListView component is not working as expected~~
-  * ~~Use state / hooks for data fetching~~
-* Complete task list
+* Enrich content with more data from the API
 * Verify functionality on physical device(s)
+* Write unit and end to end tests
 
 ## Running the app
 

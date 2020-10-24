@@ -43,10 +43,10 @@ const styles = StyleSheet.create({
     borderRadius: 4,
   },
   title: {
-    fontSize: 16,
+    fontSize: 18,
     fontWeight: 'bold',
     color: '#333333',
-    marginVertical: 10,
+    marginBottom: 10,
   },
   subTitle: {
     fontWeight: 'bold',
